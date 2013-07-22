@@ -68,27 +68,33 @@
 // }
 // personal_attributes();
 
-// Exercise 11 - 12
-// function profile(){
-// 	def create_header(my_name)
-// 	    <h1>my_name</h1>
-// 	end
+// Exercise 11 - 12 // the program needs to use the function command (not "def" and "end") to run methods
+// $(document).ready( function(){
+// 	var my_name = prompt("Please enter your name:");
+// 	var image_file = prompt("Please enter the url of your profile pic:");
+// 	var age = prompt("Please enter your age:");
+// 	var gender = prompt("Please enter your gender:");
+// 	var job = prompt("Please enter your job:");	
 
-// 	def create_image(image_file)
-// 	    <img src="http://www.google.com/baby.gif"/>
-// 	end
+// 	function create_header(my_name){
+// 	    document.write("<h1>" + my_name + "</h1>");
+// 	}
 
-// 	def create_paragraph(age, gender, job)
-// 	    <p>"This person is a " + age + " year old " + gender + "who currently works at " + job + "."</p>
-// 	def create_profile(name, age, gender, job, image_file)
+// 	function create_image(image_file){
+// 	    document.write("<img src='" + image_file + "'/>");
+// 	}
+
+// 	function create_paragraph(age, gender, job){
+// 	    document.write("<p>A " + age + " year old " + gender + " who currently works as a " + job + ".</p>");
+// 	}
+// 	function create_profile(name, age, gender, job, image_file){
 // 	    create_header(name)
 // 	    create_image(image_file)
 // 	    create_paragraph(age, gender, job)
-// 	end
-// 	console.log()
-// }
-// profile();
-
+// 	    console.log(name + " is a " + age + " year old " + gender + " who currently works as as a " + job + ". Here is the url to his profile pic: " + image_file);
+// 	}
+// 	create_profile(my_name, age, gender, job, image_file);
+// });
 
 // Exercise 13 - 16
 
