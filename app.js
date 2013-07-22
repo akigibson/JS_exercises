@@ -95,9 +95,8 @@
 // 	}
 // 	create_profile(my_name, age, gender, job, image_file);
 // });
-
+$(document).ready( function(){
 // Exercise 13 - 16
-
 // $("h1");
 // $("div");
 // $("div").first();
@@ -131,8 +130,19 @@
 // $(".main").append("<p>How you like me now is currently playing on the boombox.</p>");
 
 // Exercise 23
+// $(".right-sidebar").remove();
 
+// Exercise 24
 
+// Exercise 25
+
+// Exercise 26
+
+// Exercise 27
+
+// Exercise 28
+
+});
 // Exercise 31 - Event Handling
 
 // Notes
