@@ -271,19 +271,24 @@
 // });
 
 // Exercise 41-43
-$(document).ready(function(){
-     $('#myForm').ajaxForm(function() { 
-                while (".Email").length < 8
-                alert("Please make sure that your email and password are at least 8 characters.");
-                alert("Thank you for logging in!."); 
-            }); 
-        }); 
-
-
-
-
-
-
+// $(document).ready(function(){
+// 	$("form").submit(function() {
+// 		$(".error").remove();
+// 		var mail = $('input:text', this).val();
+// 		var pwd = $('input:password', this).val();
+// 		while ( mail.length < 8 || pwd.length < 8) {
+//     		$(".wrapper").prepend("<div class=\"error\"><p>Please ensure that your email and password are at least 8 characters.</p></div>");
+//     		return false;
+//   	}
+//   	var valid_email = new RegExp(".@.+\\..");
+// 		while ( valid_email.test(mail) == false){
+// 			$(".wrapper").prepend("<div class=\"error\"><p>Please enter a valid email address.</p></div>");
+// 			return false;
+// 		}
+//   	$(".wrapper").prepend("<div class=\"success\"><p>You have successfully logged in.</p></div>");
+//   	return true;
+// 	});
+// }); 
 
 
 

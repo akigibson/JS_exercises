@@ -20,6 +20,15 @@ p {
 	padding: 1em;
 	font-size: 1.2em;
 }
+.error {
+	background-color:#FFA500; 
+	color:#FFFFFF;
+}
+.success {
+	background-color:#00FF00; 
+	color:#FFFFFF;
+}
+
 
 .wrapper {
 	display: block;
