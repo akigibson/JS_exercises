@@ -95,7 +95,7 @@
 // 	}
 // 	create_profile(my_name, age, gender, job, image_file);
 // });
-$(document).ready( function(){
+
 // Exercise 13 - 16
 // $("h1");
 // $("div");
@@ -133,18 +133,34 @@ $(document).ready( function(){
 // $(".right-sidebar").remove();
 
 // Exercise 24
+// var blog = $(".nav-item:first");
+// $(".nav-item:first").remove();
+// $("#bottom-nav-item").after(blog);
 
 // Exercise 25
+// var navbar = $(".nav").clone();
+// $(".main").after(navbar);
 
 // Exercise 26
+// $(".profilepic").width("50%")
 
 // Exercise 27
+// $(".right-sidebar").hide(500);
 
 // Exercise 28
+// list of jQuery effects: http://www.w3schools.com/jquery/jquery_ref_html.asp
 
-});
+//first effect
+// $(".main p").text("Let me know.");
+
+//second effect
+// $(".nav").unwrap();
+
+//third effect
+// $(".main p").empty();
+
+
 // Exercise 31 - Event Handling
-
 // Notes
 // $("h1:first");
 
@@ -162,6 +178,12 @@ $(document).ready( function(){
 //         );
 //     }
 // );
+
+// Exercise 32 - 34
+// $(document).ready( function(){
+
+// $("div").hide(); //I placed a breakpoint here to verify that the divs loaded before they were hid. In the console I entered '$("div")' to search for divs 
+ // });
 
 // Exercise 35
 
@@ -204,7 +226,7 @@ $(document).ready( function(){
 // Exercise 38
 
 // var putMessageOnClick = function(){
-//   $(this).clone().appendTo(".main").after();
+//   $(this).clone().insertAfter(".main");
 // }
 
 
@@ -213,6 +235,57 @@ $(document).ready( function(){
 //     putMessageOnClick
 //   ); 
 // });
+
+// Exercise 39
+
+// var toggleOnClick = function(){
+//   $(window).click(function(){
+//   	$('div').toggle();
+//   });
+// }
+
+
+
+// $(document).ready( function(){
+//   $(".main").click(
+//     toggleOnClick
+//   );
+  
+// });
+
+
+// Exercise 40
+
+// $(document).ready( function(){
+//   $("*").mouseover(function(){
+//     $(this).css("font-weight", "bold");
+//   }).mouseleave(function(){
+// 		$(this).css("font-weight", "normal");
+// 	});
+//   $("p").dblclick(function(){
+//   	alert("If you right click on this element you can inspect it with the Chrome Dev Tools")
+//   });
+//   $(window).resize(function() {
+//   		alert("I'd rather you not resize this window.")
+//   });
+// });
+
+// Exercise 41-43
+$(document).ready(function(){
+     $('#myForm').ajaxForm(function() { 
+                while (".Email").length < 8
+                alert("Please make sure that your email and password are at least 8 characters.");
+                alert("Thank you for logging in!."); 
+            }); 
+        }); 
+
+
+
+
+
+
+
+
 
 
 
